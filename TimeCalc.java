@@ -9,10 +9,12 @@ public class TimeCalc {
         int hours = Integer.valueOf(hoursSt);
         String minutesSt = (time.charAt(3) + "" + time.charAt(4));
         int minutes = Integer.valueOf(minutesSt);
+
         int total_minutes = (hours * 60) + minutes + minutesadd;
         int new_hour = (total_minutes / 60) % 24;
         int new_minutes = total_minutes - ((total_minutes / 60)* 60);
         String final_hour = "";
+        
         if(new_hour < 10){
             if(new_minutes < 10){
                 final_hour = "0" + new_hour + ":" + "0" + new_minutes;
@@ -29,10 +31,6 @@ public class TimeCalc {
                 final_hour = new_hour + ":" + new_minutes;
             }
         }
-
-
-        System.out.println(time + "hours" + hours + "minutes: " + minutes + "minutes to add: " + minutesadd);
-        System.out.println(new_hour + "  " + new_minutes);
         System.out.println( final_hour);
     }
 }

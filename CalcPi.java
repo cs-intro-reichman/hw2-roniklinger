@@ -8,7 +8,7 @@ public class CalcPi {
 			approx = approx + (Math.pow(-1, i) / (2 * i + 1));
 			
 		}
-		System.out.println(Math.PI);
-		System.out.println(approx*4);
+		System.out.println("pi according to Java: " + Math.PI);
+		System.out.println("pi, approximated:	  " + approx*4);
 	}
 }

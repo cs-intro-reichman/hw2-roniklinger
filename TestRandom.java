@@ -23,7 +23,7 @@ public  class  TestRandom {
 			
 		}
 		else{
-			double ratio = (double)count_max/count_min;
+			double ratio = (double)count_max / count_min;
 			System.out.println(ratio);
 		}
 		

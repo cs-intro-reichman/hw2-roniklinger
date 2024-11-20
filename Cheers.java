@@ -6,9 +6,8 @@ public class Cheers {
                 name = name.toUpperCase();
                 int num = Integer.parseInt(args[1]);
                 int name_len = name.length();
-                int i = 0;
                 char letter;
-                while(i < name_len){
+                for(int i=0;i<name_len;i++){
                         letter = name.charAt(i);
                         if (letter == 'A' || letter == 'E' || letter == 'F' || letter == 'H' ||letter == 'I' ||
                                 letter == 'L' || letter == 'M' || letter == 'N' || letter == 'O' || letter == 'R' ||
@@ -18,7 +17,6 @@ public class Cheers {
                         else{
                                 System.out.println("Give me a  " + letter + ": " + letter + "!");   
                         }
-                        i++;
                 }
                 System.out.println("What does that spell?");
                 for (int j = 0; j < num; j++){

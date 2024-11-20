@@ -10,25 +10,26 @@ public class Collatz {
 			i++;
 			num = i;
 			count = 1;
+			System.out.print(i + " ");
 			if(i == 1){
 				j = 1;
 			}
 			while (num != 1 || j == 1 ){
 				if (j == 1){
-					j++;
+					j = 0;
 				}
-					if (num % 2 == 0){
-						num = num / 2;
-						if(ch.charAt(0) == 'v'){
-							System.out.print(i + " " + num + " ");
-						}
+				if (num % 2 == 0){
+					num = num / 2;
+					if(ch.charAt(0) == 'v'){
+						System.out.print(num + " ");
 					}
-					else{
-						num = (num * 3) + 1;
-						if(ch.charAt(0) == 'v'){
-							System.out.print(i + " " + num + " ");
-						}
+				}
+				else{
+					num = (num * 3) + 1;
+					if(ch.charAt(0) == 'v'){
+						System.out.print(num + " ");
 					}
+				}
 				count++;
 			}
 			if(ch.charAt(0) == 'v'){
